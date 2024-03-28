@@ -25,10 +25,10 @@
   <link rel="stylesheet" href="{{ site.data.icons.mdi }}">
 {% endif %}
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+<link rel="stylesheet" href="/assets/css/docsearch.min.css">
 <link
   rel="stylesheet"
-  href="{{ site.url }}/assets/css/{{ site.docs_file }}.css?v={{ site.time | date: "%Y%m%d%H%M" }}"
+  href="/assets/css/{{ site.docs_file }}.css?v={{ site.time | date: "%Y%m%d%H%M" }}"
 >
 
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
@@ -87,23 +87,23 @@
 {% elsif page.layout == 'post' %}
   <meta
     property="og:image"
-    content="{{ site.url }}/assets/images/blog/share/{{ page.id | slice: 12,page.id.size }}.jpg"
+    content="/assets/images/blog/share/{{ page.id | slice: 12,page.id.size }}.jpg"
   >
   <meta
     name="twitter:image"
-    content="{{ site.url }}/assets/images/blog/share/{{ page.id | slice: 12,page.id.size }}.jpg"
+    content="/assets/images/blog/share/{{ page.id | slice: 12,page.id.size }}.jpg"
   >
 {% else %}
-  <meta property="og:image" content="{{ site.url }}/assets/images/bulma-banner.png">
-  <meta name="twitter:image" content="{{ site.url }}/assets/images/bulma-banner.png">
+  <meta property="og:image" content="/assets/images/bulma-banner.png">
+  <meta name="twitter:image" content="/assets/images/bulma-banner.png">
 {% endif %}
 
 <!-- Favicons -->
-<link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}/favicons/apple-touch-icon.png?v=201701041855">
-<link rel="icon" type="image/png" href="{{ site.url }}/favicons/favicon-32x32.png?v=201701041855" sizes="32x32">
-<link rel="icon" type="image/png" href="{{ site.url }}/favicons/favicon-16x16.png?v=201701041855" sizes="16x16">
-<!-- link rel="manifest" href="{{ site.url }}/favicons/manifest.json?v=201701041855" -->
-<link rel="mask-icon" href="{{ site.url }}/favicons/safari-pinned-tab.svg?v=201701041855" color="#00d1b2">
-<link rel="shortcut icon" href="{{ site.url }}/favicons/favicon.ico?v=201701041855">
-<meta name="msapplication-config" content="{{ site.url }}/favicons/browserconfig.xml?v=201701041855">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png?v=201701041855">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png?v=201701041855" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png?v=201701041855" sizes="16x16">
+<!-- link rel="manifest" href="/favicons/manifest.json?v=201701041855" -->
+<link rel="mask-icon" href="/favicons/safari-pinned-tab.svg?v=201701041855" color="#00d1b2">
+<link rel="shortcut icon" href="/favicons/favicon.ico?v=201701041855">
+<meta name="msapplication-config" content="/favicons/browserconfig.xml?v=201701041855">
 <meta name="theme-color" content="#00d1b2">

@@ -5,8 +5,8 @@ title: Components/Navbar
 
 {% capture content %}
   <div class="navbar-brand">
-    <a class="navbar-item" href="{{ site.url }}">
-      <img src="{{ site.url }}/images/bulma-logo.png" width="112" height="28">
+    <a class="navbar-item" href="">
+      <img src="/images/bulma-logo.png" width="112" height="28">
     </a>
 
     <a class="navbar-burger">
@@ -89,11 +89,11 @@ title: Components/Navbar
 {% for color in site.data.colors.justColors %}
   <nav id="navbar-{{ color }}" class="navbar is-{{ color }}">
     <div class="navbar-brand">
-      <a class="navbar-item" href="{{ site.url }}">
+      <a class="navbar-item" href="">
         {% if include.light %}
-          <img src="{{ site.url }}/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+          <img src="/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
         {% else %}
-          <img src="{{ site.url }}/images/bulma-logo-white.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+          <img src="/images/bulma-logo-white.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
         {% endif %}
       </a>
       <div class="navbar-burger" data-target="navMenuColor{{ color }}-example">
@@ -105,34 +105,34 @@ title: Components/Navbar
 
     <div id="navMenuColor{{ color }}-example" class="navbar-menu">
       <div class="navbar-start">
-        <a class="navbar-item" href="{{ site.url }}/">
+        <a class="navbar-item" href="/">
           Home
         </a>
         <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link" href="{{ site.url }}/documentation/overview/start/">
+          <a class="navbar-link" href="/documentation/overview/start/">
             Docs
           </a>
           <div class="navbar-dropdown">
-            <a class="navbar-item" href="{{ site.url }}/documentation/overview/start/">
+            <a class="navbar-item" href="/documentation/overview/start/">
               Overview
             </a>
-            <a class="navbar-item" href="{{ site.url }}/documentation/overview/modifiers/">
+            <a class="navbar-item" href="/documentation/overview/modifiers/">
               Modifiers
             </a>
-            <a class="navbar-item" href="{{ site.url }}/documentation/columns/basics/">
+            <a class="navbar-item" href="/documentation/columns/basics/">
               Columns
             </a>
-            <a class="navbar-item" href="{{ site.url }}/documentation/layout/container/">
+            <a class="navbar-item" href="/documentation/layout/container/">
               Layout
             </a>
-            <a class="navbar-item" href="{{ site.url }}/documentation/form/general/">
+            <a class="navbar-item" href="/documentation/form/general/">
               Form
             </a>
             <hr class="navbar-divider">
-            <a class="navbar-item" href="{{ site.url }}/documentation/elements/box/">
+            <a class="navbar-item" href="/documentation/elements/box/">
               Elements
             </a>
-            <a class="navbar-item is-active" href="{{ site.url }}/documentation/components/breadcrumb/">
+            <a class="navbar-item is-active" href="/documentation/components/breadcrumb/">
               Components
             </a>
           </div>

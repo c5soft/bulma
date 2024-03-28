@@ -65,7 +65,7 @@
         {% assign prev_link = site.data.links.by_id[prev_link_id] %}
         <a
           class="bd-pagination-button bd-pagination-prev bd-theme-{{ prev_theme }}"
-          href="{{ site.url }}{{ prev_link.path }}"
+          href="{{ prev_link.path }}"
           title="{{ prev_link.name }}"
         >
           <i>←</i>
@@ -80,7 +80,7 @@
         {% assign next_link = site.data.links.by_id[next_link_id] %}
         <a
           class="bd-pagination-button bd-pagination-next bd-theme-{{ next_theme }}"
-          href="{{ site.url }}{{ next_link.path }}"
+          href="{{ next_link.path }}"
           title="{{ next_link.name }}"
         >
           <span>

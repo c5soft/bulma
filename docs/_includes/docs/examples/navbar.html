@@ -1,6 +1,6 @@
 <nav class="navbar{% if include.transparent %} is-transparent{% endif %}">
   <div class="navbar-brand">
-    <a class="navbar-item" href="{{ site.url }}">
+    <a class="navbar-item" href="">
       {% include svg/bulma-logo.html %}
     </a>
     <div class="navbar-burger js-burger" data-target="navbarExample{{ include.id }}">
@@ -13,18 +13,18 @@
 
   <div id="navbarExample{{ include.id }}" class="navbar-menu">
     <div class="navbar-start">
-      <a class="navbar-item" href="{{ site.url }}/"> Home </a>
+      <a class="navbar-item" href="/"> Home </a>
       <div class="navbar-item has-dropdown is-active">
-        <a class="navbar-link" href="{{ site.url }}/documentation/overview/start/"> Docs </a>
+        <a class="navbar-link" href="/documentation/overview/start/"> Docs </a>
         <div class="navbar-dropdown{% if include.boxed %} is-boxed{% endif %}">
-          <a class="navbar-item" href="{{ site.url }}/documentation/overview/start/"> Overview </a>
-          <a class="navbar-item" href="{{ site.url }}/documentation/overview/modifiers/"> Modifiers </a>
+          <a class="navbar-item" href="/documentation/overview/start/"> Overview </a>
+          <a class="navbar-item" href="/documentation/overview/modifiers/"> Modifiers </a>
           <hr class="navbar-divider">
-          <a class="navbar-item" href="{{ site.url }}/documentation/columns/basics/"> Columns </a>
-          <a class="navbar-item is-selected" href="{{ site.url }}/documentation/layout/container/"> Layout </a>
-          <a class="navbar-item" href="{{ site.url }}/documentation/form/general/"> Form </a>
-          <a class="navbar-item" href="{{ site.url }}/documentation/elements/box/"> Elements </a>
-          <a class="navbar-item" href="{{ site.url }}/documentation/components/breadcrumb/"> Components </a>
+          <a class="navbar-item" href="/documentation/columns/basics/"> Columns </a>
+          <a class="navbar-item is-selected" href="/documentation/layout/container/"> Layout </a>
+          <a class="navbar-item" href="/documentation/form/general/"> Form </a>
+          <a class="navbar-item" href="/documentation/elements/box/"> Elements </a>
+          <a class="navbar-item" href="/documentation/components/breadcrumb/"> Components </a>
         </div>
       </div>
     </div>

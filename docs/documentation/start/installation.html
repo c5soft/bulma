@@ -12,7 +12,7 @@ breadcrumb:
 ---
 {% capture jsdelivr_a %}
 {%highlight css %}
-@import "https://cdn.jsdelivr.net/npm/bulma@{{site.data.meta.version }}/css/bulma.min.css";
+@import "/assets/css/bulma/bulma.min.css";
 {% endhighlight %}
 {% endcapture %}
 
@@ -20,21 +20,20 @@ breadcrumb:
 {% highlight html %}
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/bulma@{{ site.data.meta.version }}/css/bulma.min.css"
+  href="/assets/css/bulma/bulma.min.css"
 >
 {% endhighlight %}
 {% endcapture %}
 
 {% capture jsdelivr_rtl_a %}
-{% highlight css %}@import "https://cdn.jsdelivr.net/npm/bulma@{{
-site.data.meta.version }}/css/bulma-rtl.min.css";{% endhighlight %}
+{% highlight css %}@import "/assets/css/bulma/bulma-rtl.min.css";{% endhighlight %}
 {% endcapture %}
 
 {% capture jsdelivr_rtl_b %}
 {% highlight html %}
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/bulma@{{ site.data.meta.version }}/css/bulma-rtl.min.css"
+  href="/assets/css/bulma/bulma-rtl.min.css"
 >
 {% endhighlight %}
 {% endcapture %}

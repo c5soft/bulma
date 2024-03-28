@@ -18,7 +18,7 @@ breadcrumb:
     {% for link_id in site.data.links.more %}
       {% assign link = site.data.links.by_id[link_id] %}
       <div class="bd-post">
-        <a class="bd-post-link" href="{{ site.url }}{{ link.path }}" style="--color: var(--{{ link.color }});">
+        <a class="bd-post-link" href="{{ link.path }}" style="--color: var(--{{ link.color }});">
           <div class="bd-post-body">
             <figure class="icon">
               <i class="{% if link.icon_brand %}fab{% elsif link.icon_regular %}far{% else %}fas{% endif %} fa-{{ link.icon }}"></i>
